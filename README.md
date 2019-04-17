@@ -51,6 +51,8 @@ func main() {
 
 ### Sql Plus
 
+Use: `docker exec -it [container-id] bash`
+
 ````
-root@container -id:/# /usr/lib/instantclient_18_5/sqlplus account/password@127.0.0.1:1521/servicename
+root@container-id:/# /usr/lib/instantclient_18_5/sqlplus account/password@127.0.0.1:1521/servicename
 ````
