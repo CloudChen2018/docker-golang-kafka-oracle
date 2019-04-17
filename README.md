@@ -1,4 +1,4 @@
-# Golang-kafka-oracle
+# Golang-kafka-oracle ver-1.0.0
 
 Golang with kafka lib ([librdkafka](https://github.com/edenhill/librdkafka)) and oracle driver ([go-oci8](https://github.com/mattn/go-oci8)).
 
@@ -56,3 +56,9 @@ Use: `docker exec -it [container-id] bash`
 ````
 root@container-id:/# /usr/lib/instantclient_18_5/sqlplus account/password@127.0.0.1:1521/servicename
 ````
+
+## Change Log
+
+- 1.0.0
+    - Add kafka lib [librdkafka](https://github.com/edenhill/librdkafka)
+    - Add oracle driver [go-oci8](https://github.com/mattn/go-oci8)
