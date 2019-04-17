@@ -18,9 +18,9 @@ func main() {
   kServer := "[your-kafka-server-ip]"
   kProducer, err := kafka.NewProducer(&kafka.ConfigMap{"bootstrap.servers": kServer})
 
-	if err != nil {
-		log.Fatalf("Unable to create producer, kafka server: %s, error: %v.\n", kServer, err)
-	}
+  if err != nil {
+    log.Fatalf("Unable to create producer, kafka server: %s, error: %v.\n", kServer, err)
+  }
   
   log.Printf("Create producer ok.\n", dbConnect)
 }
@@ -39,14 +39,12 @@ import (
 
 func main() {
   dbConnect := "account/password@127.0.0.1:1521/servicename"
-	db, err := sql.Open("oci8", dbConnect)
+  db, err := sql.Open("oci8", dbConnect)
 
-	if err != nil {
-		log.Fatalf("Unable to connect DB \"%s\", error: %v.\n", dbConnect, err)
-	}
+  if err != nil {
+    log.Fatalf("Unable to connect DB \"%s\", error: %v.\n", dbConnect, err)
+  }
 
-	log.Printf("Connect DB \"%s\" ok.\n", dbConnect)
-  
-  ...
+  log.Printf("Connect DB \"%s\" ok.\n", dbConnect)
 }
 ````
