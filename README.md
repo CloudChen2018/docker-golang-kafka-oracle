@@ -1,4 +1,4 @@
-# Golang-kafka-oracle
+# Golang-kafka-oracle ver-1.0.0
 
 Golang with kafka lib ([librdkafka](https://github.com/edenhill/librdkafka)) and oracle driver ([go-oci8](https://github.com/mattn/go-oci8)).
 
