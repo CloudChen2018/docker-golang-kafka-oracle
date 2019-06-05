@@ -1,5 +1,9 @@
 FROM golang:1.12.4
 
+ENV TZ=Asia/Taipei
+
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
 COPY ./data/* /data/
 
 RUN \
